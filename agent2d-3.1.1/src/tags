@@ -1,0 +1,23 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+AGENT2D_ROLE_SAMPLE_H	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	28;"	d	language:C++
+create	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    SoccerRole::Ptr create()$/;"	f	language:C++	class:RoleSample
+doKick	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_goalie.cpp	/^RoleGoalie::doKick( PlayerAgent * agent )$/;"	f	language:C++	class:RoleGoalie
+doKick	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.cpp	/^RoleSample::doKick( PlayerAgent * agent )$/;"	f	language:C++	class:RoleSample
+doKick	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    void doKick( rcsc::PlayerAgent * agent );$/;"	p	language:C++	class:RoleSample
+doKick	/v/filer4b/v38q001/theshibk/cs344M/wolf_pack/agent2d-3.1.1/src/role_wolf.cpp	/^RoleWolf::doKick( PlayerAgent * agent )$/;"	f	language:C++	class:RoleWolf
+doMove	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_goalie.cpp	/^RoleGoalie::doMove( PlayerAgent * agent )$/;"	f	language:C++	class:RoleGoalie
+doMove	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.cpp	/^RoleSample::doMove( PlayerAgent * agent )$/;"	f	language:C++	class:RoleSample
+doMove	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    void doMove( rcsc::PlayerAgent * agent );$/;"	p	language:C++	class:RoleSample
+doMove	/v/filer4b/v38q001/theshibk/cs344M/wolf_pack/agent2d-3.1.1/src/role_wolf.cpp	/^RoleWolf::doMove( PlayerAgent * agent )$/;"	f	language:C++	class:RoleWolf
+execute	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_goalie.cpp	/^RoleGoalie::execute( PlayerAgent * agent )$/;"	f	language:C++	class:RoleGoalie
+execute	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.cpp	/^RoleSample::execute( PlayerAgent * agent )$/;"	f	language:C++	class:RoleSample
+execute	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    bool execute( rcsc::PlayerAgent * agent );$/;"	p	language:C++	class:RoleSample
+execute	/v/filer4b/v38q001/theshibk/cs344M/wolf_pack/agent2d-3.1.1/src/role_wolf.cpp	/^RoleWolf::execute( PlayerAgent * agent )$/;"	f	language:C++	class:RoleWolf
+NAME	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    static const std::string NAME;$/;"	m	language:C++	class:RoleSample
+name	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    std::string & name()$/;"	f	language:C++	class:RoleSample
+role	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_goalie.cpp	/^rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleGoalie::create,$/;"	m	language:C++	namespace:__anon1	file:
+role	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.cpp	/^rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleSample::create,$/;"	m	language:C++	namespace:__anon1	file:
+role	/v/filer4b/v38q001/theshibk/cs344M/wolf_pack/agent2d-3.1.1/src/role_wolf.cpp	/^rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleWolf::create,$/;"	m	language:C++	namespace:__anon1	file:
+RoleSample	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    RoleSample()$/;"	f	language:C++	class:RoleSample
+RoleSample	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^class RoleSample$/;"	c	language:C++
+~RoleSample	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/src/role_sample.h	/^    ~RoleSample()$/;"	f	language:C++	class:RoleSample

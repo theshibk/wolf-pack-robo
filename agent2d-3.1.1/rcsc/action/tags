@@ -1,0 +1,3 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+execute	/v/filer4b/v38q001/theshibk/cs344M/wolf_pack/agent2d-3.1.1/rcsc/action/bhv_hunt.cpp	/^Bhv_Hunt::execute( PlayerAgent * agent )$/;"	f	language:C++	class:rcsc::Bhv_Hunt
+rcsc	/v/filer4b/v38q001/theshibk/cs344M/wolf_pack/agent2d-3.1.1/rcsc/action/bhv_hunt.cpp	/^namespace rcsc {$/;"	n	language:C++	file:

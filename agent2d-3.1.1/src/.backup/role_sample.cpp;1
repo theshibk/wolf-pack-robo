@@ -1,0 +1,243 @@
+// -*-c++-*-
+
+/*
+ *Copyright:
+
+ Copyright (C) Hidehisa AKIYAMA
+
+ This code is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3, or (at your option)
+ any later version.
+
+ This code is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this code; see the file COPYING.  If not, write to
+ the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+
+ *EndCopyright:
+ */
+
+/////////////////////////////////////////////////////////////////////
+
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
+#include "role_sample.h"
+
+#include "strategy.h"
+
+#include "bhv_basic_offensive_kick.h"
+#include "bhv_basic_move.h"
+
+#include <rcsc/formation/formation.h>
+
+#include <rcsc/player/player_agent.h>
+#include <rcsc/player/intercept_table.h>
+#include <rcsc/player/debug_client.h>
+
+#include <rcsc/common/logger.h>
+#include <rcsc/common/server_param.h>
+
+
+#include <rcsc/action/basic_actions.h>
+#include <rcsc/action/body_kick_one_step.h>
+#include <rcsc/action/body_go_to_point.h>
+#include <rcsc/action/bhv_shoot.h>
+#include <rcsc/action/body_dribble.h>
+#include <rcsc/action/body_pass.h>
+#include <rcsc/action/body_advance_ball.h>
+#include <rcsc/action/body_clear_ball.h>
+#include <rcsc/action/body_go_to_point_dodge.h>
+#include <rcsc/action/body_intercept.h>
+
+
+#include <rcsc/action/neck_scan_field.h>
+#include <rcsc/action/neck_turn_to_ball_or_scan.h>
+
+using namespace rcsc;
+
+const std::string RoleSample::NAME( "Sample" );
+
+/*-------------------------------------------------------------------*/
+/*!
+
+ */
+namespace {
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleSample::create,
+                                                       RoleSample::NAME );
+}
+
+/*-------------------------------------------------------------------*/
+/*!
+Useful code examples:
+
+// Get a pointer to the world model
+const WorldModel & wm = agent->world();
+
+// Agent's position in the world
+Vector2D myPos = wm.self().pos();
+
+// Position of the ball
+Vector2D myBall = wm.ball().pos();
+
+// Check if ball is kickable (should always be done before attempting to kick)
+bool kickable = agent->world().self().isKickable();
+
+// Current target position of agent in formation
+const Vector2D formation_position = Strategy::i().getPosition( wm.self().unum() );
+
+// Move to a point on the field
+Body_GoToPoint( target_point, dist_thr, dash_power).execute( agent );
+
+// A way to kick the ball at Vector2D target
+Body_KickOneStep( target, ServerParam::i().ballSpeedMax() ).execute( agent );
+
+// A list of teammates sorted in ascending order by their distance
+// from the ball
+agent->world().teammatesFromBall()
+
+// Set neck to scan the field (you should always specify some neck turn)
+agent->setNeckAction( new Neck_ScanField() );
+*/
+
+
+bool
+RoleSample::execute( PlayerAgent * agent )
+{
+
+    const WorldModel & wm = agent->world();
+    if (wm.self().isKickable())
+    {
+        doKick(agent);
+    }
+    else
+    {
+        doMove(agent);
+    }
+
+    return true;
+}
+
+/*-------------------------------------------------------------------*/
+/*!
+
+*/
+void
+RoleSample::doKick( PlayerAgent * agent )
+{
+    switch ( Strategy::get_ball_area( agent->world().ball().pos() ) ) {
+    case Strategy::BA_CrossBlock:
+    case Strategy::BA_Stopper:
+    case Strategy::BA_Danger:
+        Body_ClearBall().execute(agent);
+        agent->setNeckAction( new Neck_ScanField() );
+    case Strategy::BA_DribbleAttack:
+    {
+        const WorldModel & wm = agent->world();
+        const Vector2D target_point = Vector2D(wm.self().pos().x + 5, wm.self().pos().y);
+        double dist_thr = 1;
+        const double dash_power = Strategy::get_normal_dash_power(agent->world());
+        const int dash_count = 3;
+
+        Body_Dribble(target_point, dist_thr, dash_power, dash_count, true).execute(agent);
+        agent->setNeckAction( new Neck_TurnToBall() );
+        break;
+    }
+    case Strategy::BA_DribbleBlock:
+    case Strategy::BA_DefMidField:
+        Body_AdvanceBall().execute(agent);
+        agent->setNeckAction( new Neck_ScanField() );
+        break;
+    case Strategy::BA_OffMidField:
+    case Strategy::BA_Cross:
+        Body_Pass().execute(agent);
+        agent->setNeckAction( new Neck_TurnToBall() );
+        break;
+    case Strategy::BA_ShootChance:
+        Bhv_Shoot().execute(agent);
+        agent->setNeckAction( new Neck_TurnToBall() );
+        break;
+    default:
+        Bhv_BasicOffensiveKick().execute( agent );
+        break;
+    }
+}
+
+/*-------------------------------------------------------------------*/
+/*!
+
+*/
+void
+RoleSample::doMove( PlayerAgent * agent )
+{
+    const bool offense = agent->world().existKickableTeammate() ||
+        agent->world().lastKickerSide() == agent->world().ourSide();
+    if(agent->world().getDistTeammateNearestToBall(1, true) > agent->world().ball().distFromSelf())
+    {
+        agent->setNeckAction( new Neck_TurnToBall() );
+        Body_Intercept(true, agent->world().ball().pos()).execute(agent);
+    }
+    else if (offense)
+    {
+
+        switch ( Strategy::get_ball_area( agent->world() ) ) {
+        case Strategy::BA_CrossBlock:
+        case Strategy::BA_Stopper:
+        case Strategy::BA_Danger:
+        case Strategy::BA_DribbleBlock:
+        case Strategy::BA_DefMidField:
+        case Strategy::BA_DribbleAttack:
+        case Strategy::BA_OffMidField:
+        {
+            const WorldModel & wm = agent->world();
+            Vector2D target_point_ = wm.self().pos();
+            if (wm.ball().pos().x > wm.self().pos().x - 10)
+                target_point_ = Vector2D(wm.self().pos().x + 5, wm.self().pos().y);
+            else if (wm.ball().pos().x > 0)
+                target_point_ = Vector2D(wm.self().pos().x - 5, wm.self().pos().y);
+            const Vector2D target_point = target_point_;
+            const double dash_power = Strategy::get_normal_dash_power(agent->world());
+            Body_GoToPointDodge(target_point, dash_power).execute(agent);
+            agent->setNeckAction( new Neck_TurnToBall() );
+            break;
+        }
+        case Strategy::BA_Cross:
+        case Strategy::BA_ShootChance:
+        {
+            const WorldModel & wm = agent->world();
+            const Vector2D target_point = wm.self().pos();
+            const double dash_power = Strategy::get_normal_dash_power(agent->world());
+            Body_GoToPointDodge(target_point, dash_power).execute(agent);
+            agent->setNeckAction( new Neck_TurnToBall() );
+            break;
+        }
+        default:
+            Bhv_BasicMove().execute( agent );
+            break;
+        }
+    }
+    else
+    {
+        agent->setNeckAction( new Neck_TurnToBall() );
+        if (agent->world().ball().distFromSelf() < 6)
+        {
+            Body_Intercept(true, agent->world().ball().pos()).execute(agent);
+        }
+        else
+        {
+            const WorldModel & wm = agent->world();
+            const Vector2D target_point = Strategy::i().getPosition(wm.self().unum());
+            const double dash_power = Strategy::get_normal_dash_power(agent->world());
+            Body_GoToPoint(target_point, 5, dash_power).execute(agent);
+            agent->setNeckAction( new Neck_ScanField() );
+        }
+
+    }
+}
+

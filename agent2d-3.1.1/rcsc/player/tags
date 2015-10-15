@@ -1,0 +1,191 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+allPlayers	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const AbstractPlayerCont & allPlayers() const { return M_all_players; }$/;"	f	language:C++	class:rcsc::WorldModel
+audioMemory	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AudioMemory & audioMemory() const$/;"	f	language:C++	class:rcsc::WorldModel
+ball	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const BallObject & ball() const { return M_ball; }$/;"	f	language:C++	class:rcsc::WorldModel
+checkGhost	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void checkGhost( const ViewArea & varea );$/;"	p	language:C++	class:rcsc::WorldModel
+checkTeamPlayer	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void checkTeamPlayer( const SideID side,$/;"	p	language:C++	class:rcsc::WorldModel
+checkUnknownPlayer	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void checkUnknownPlayer( const Localization::PlayerT & player,$/;"	p	language:C++	class:rcsc::WorldModel
+countOpponentsIn	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    size_t countOpponentsIn( const REGION & region,$/;"	f	language:C++	class:rcsc::WorldModel
+countPlayer	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    size_t countPlayer( boost::shared_ptr< const PlayerPredicate > predicate ) const;$/;"	p	language:C++	class:rcsc::WorldModel
+countPlayer	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    size_t countPlayer( const PlayerPredicate * predicate ) const;$/;"	p	language:C++	class:rcsc::WorldModel
+countPlayersIn	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    size_t countPlayersIn( const REGION & region,$/;"	f	language:C++	class:rcsc::WorldModel
+countTeammatesIn	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    size_t countTeammatesIn( const REGION & region,$/;"	f	language:C++	class:rcsc::WorldModel
+dirCount	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int dirCount( const AngleDeg & angle ) const$/;"	f	language:C++	class:rcsc::WorldModel
+dirRangeCount	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int dirRangeCount( const AngleDeg & angle,$/;"	p	language:C++	class:rcsc::WorldModel
+DIR_CONF_DIVS	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^        DIR_CONF_DIVS = 72$/;"	e	language:C++	enum:rcsc::WorldModel::__anon1
+DIR_STEP	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    static const double DIR_STEP; \/\/!< the angle steps for dir confidence$/;"	m	language:C++	class:rcsc::WorldModel
+estimateBallVelByPosDiff	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void estimateBallVelByPosDiff( const VisualSensor & see,$/;"	p	language:C++	class:rcsc::WorldModel
+estimateUnknownPlayerUnum	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void estimateUnknownPlayerUnum();$/;"	p	language:C++	class:rcsc::WorldModel
+existKickableOpponent	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool existKickableOpponent() const { return M_exist_kickable_opponent; }$/;"	f	language:C++	class:rcsc::WorldModel
+existKickableTeammate	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool existKickableTeammate() const { return M_exist_kickable_teammate; }$/;"	f	language:C++	class:rcsc::WorldModel
+existOpponentIn	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool existOpponentIn( const REGION & region,$/;"	f	language:C++	class:rcsc::WorldModel
+existPlayerIn	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool existPlayerIn( const REGION & region,$/;"	f	language:C++	class:rcsc::WorldModel
+existTeammateIn	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool existTeammateIn( const REGION & region,$/;"	f	language:C++	class:rcsc::WorldModel
+fullstateTime	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const GameTime & fullstateTime() const { return M_fullstate_time; }$/;"	f	language:C++	class:rcsc::WorldModel
+gameMode	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const GameMode & gameMode() const { return M_game_mode; }$/;"	f	language:C++	class:rcsc::WorldModel
+getDistOpponentNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double getDistOpponentNearestTo( const Vector2D & point,$/;"	f	language:C++	class:rcsc::WorldModel
+getDistOpponentNearestToBall	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double getDistOpponentNearestToBall( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+getDistOpponentNearestToSelf	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double getDistOpponentNearestToSelf( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+getDistPlayerNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double getDistPlayerNearestTo( const Vector2D & point,$/;"	f	language:C++	class:rcsc::WorldModel
+getDistTeammateNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double getDistTeammateNearestTo( const Vector2D & point,$/;"	f	language:C++	class:rcsc::WorldModel
+getDistTeammateNearestToBall	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double getDistTeammateNearestToBall( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+getDistTeammateNearestToSelf	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double getDistTeammateNearestToSelf( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+getFirstPlayer	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getFirstPlayer( const PlayerPtrCont & players,$/;"	f	language:C++	class:rcsc::WorldModel
+getOpponentGoalie	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getOpponentGoalie() const;$/;"	p	language:C++	class:rcsc::WorldModel
+getOpponentNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getOpponentNearestTo( const PlayerObject * p,$/;"	f	language:C++	class:rcsc::WorldModel
+getOpponentNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getOpponentNearestTo( const Vector2D & point,$/;"	f	language:C++	class:rcsc::WorldModel
+getOpponentNearestToBall	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getOpponentNearestToBall( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+getOpponentNearestToSelf	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getOpponentNearestToSelf( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+getOurGoalie	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const AbstractPlayerObject * getOurGoalie() const;$/;"	p	language:C++	class:rcsc::WorldModel
+getPlayerCont	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AbstractPlayerCont getPlayerCont( boost::shared_ptr< const PlayerPredicate > predicate ) const;$/;"	p	language:C++	class:rcsc::WorldModel
+getPlayerCont	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AbstractPlayerCont getPlayerCont( const PlayerPredicate * predicate ) const;$/;"	p	language:C++	class:rcsc::WorldModel
+getPlayerCont	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void getPlayerCont( AbstractPlayerCont & cont,$/;"	p	language:C++	class:rcsc::WorldModel
+getPlayerCont	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void getPlayerCont( AbstractPlayerCont & cont,$/;"	p	language:C++	class:rcsc::WorldModel
+getPlayerNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getPlayerNearestTo( const Vector2D & point,$/;"	p	language:C++	class:rcsc::WorldModel
+getPointCount	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int getPointCount( const Vector2D & point,$/;"	p	language:C++	class:rcsc::WorldModel
+getTeammateNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getTeammateNearestTo( const PlayerObject * p,$/;"	f	language:C++	class:rcsc::WorldModel
+getTeammateNearestTo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getTeammateNearestTo( const Vector2D & point,$/;"	f	language:C++	class:rcsc::WorldModel
+getTeammateNearestToBall	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getTeammateNearestToBall( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+getTeammateNearestToSelf	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerObject * getTeammateNearestToSelf( const int count_thr,$/;"	f	language:C++	class:rcsc::WorldModel
+initTeamInfo	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool initTeamInfo( const std::string & teamname,$/;"	p	language:C++	class:rcsc::WorldModel
+interceptTable	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    InterceptTable * interceptTable() const;$/;"	p	language:C++	class:rcsc::WorldModel
+isValid	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool isValid() const;$/;"	p	language:C++	class:rcsc::WorldModel
+lastKickerSide	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    SideID lastKickerSide() const { return M_last_kicker_side; }$/;"	f	language:C++	class:rcsc::WorldModel
+lastSetPlayStartTime	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const GameTime & lastSetPlayStartTime() const { return M_last_set_play_start_time; }$/;"	f	language:C++	class:rcsc::WorldModel
+localizeBall	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void localizeBall( const VisualSensor & see,$/;"	p	language:C++	class:rcsc::WorldModel
+localizePlayers	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void localizePlayers( const VisualSensor & see );$/;"	p	language:C++	class:rcsc::WorldModel
+localizeSelf	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool localizeSelf( const VisualSensor & see,$/;"	p	language:C++	class:rcsc::WorldModel
+MAX_RECORD	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    static const std::size_t MAX_RECORD; \/\/!< max record size$/;"	m	language:C++	class:rcsc::WorldModel
+M_all_players	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AbstractPlayerCont M_all_players; \/\/!< all players pointers includes self$/;"	m	language:C++	class:rcsc::WorldModel
+M_audio_memory	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    boost::shared_ptr< AudioMemory > M_audio_memory; \/\/!< heard deqinfo memory$/;"	m	language:C++	class:rcsc::WorldModel
+M_ball	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    BallObject M_ball; \/\/!< ball object$/;"	m	language:C++	class:rcsc::WorldModel
+M_dir_count	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int M_dir_count[DIR_CONF_DIVS];$/;"	m	language:C++	class:rcsc::WorldModel
+M_exist_kickable_opponent	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool M_exist_kickable_opponent; \/\/!< true if exist kickable opponent$/;"	m	language:C++	class:rcsc::WorldModel
+M_exist_kickable_teammate	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool M_exist_kickable_teammate; \/\/!< true if exist kickable teammate$/;"	m	language:C++	class:rcsc::WorldModel
+M_fullstate_time	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    GameTime M_fullstate_time; \/\/!< fullstate update time$/;"	m	language:C++	class:rcsc::WorldModel
+M_game_mode	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    GameMode M_game_mode; \/\/!< playmode and scores$/;"	m	language:C++	class:rcsc::WorldModel
+M_intercept_table	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    InterceptTable * M_intercept_table; \/\/!< interception info table$/;"	m	language:C++	class:rcsc::WorldModel
+M_known_opponents	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AbstractPlayerObject * M_known_opponents[12]; \/\/!< unum known opponents (exclude unknown player)$/;"	m	language:C++	class:rcsc::WorldModel
+M_known_teammates	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AbstractPlayerObject * M_known_teammates[12]; \/\/!< unum known teammates (include self)$/;"	m	language:C++	class:rcsc::WorldModel
+M_last_kicker_side	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    SideID M_last_kicker_side; \/\/!< last ball kicked player's side$/;"	m	language:C++	class:rcsc::WorldModel
+M_last_set_play_start_time	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    GameTime M_last_set_play_start_time; \/\/!< SetPlay started time$/;"	m	language:C++	class:rcsc::WorldModel
+M_localize	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    Localization * M_localize; \/\/!< localization module$/;"	m	language:C++	class:rcsc::WorldModel
+M_offside_line_count	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int M_offside_line_count; \/\/!< accuracy count of the offside line$/;"	m	language:C++	class:rcsc::WorldModel
+M_offside_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_offside_line_x; \/\/!< offside line x value$/;"	m	language:C++	class:rcsc::WorldModel
+M_opponents	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PlayerCont M_opponents; \/\/!< side known opponents$/;"	m	language:C++	class:rcsc::WorldModel
+M_opponents_from_ball	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PlayerPtrCont M_opponents_from_ball; \/\/!< opponents sorted by distance from ball, include unknown players$/;"	m	language:C++	class:rcsc::WorldModel
+M_opponents_from_self	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PlayerPtrCont M_opponents_from_self; \/\/!< opponents sorted by distance from ball, include unknown players$/;"	m	language:C++	class:rcsc::WorldModel
+M_opponent_card	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    Card M_opponent_card[11]; \/\/!< teammates' yellow\/red card status$/;"	m	language:C++	class:rcsc::WorldModel
+M_opponent_teamname	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    std::string M_opponent_teamname; \/\/!< opponent teamname$/;"	m	language:C++	class:rcsc::WorldModel
+M_opponent_types	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int M_opponent_types[11]; \/\/!< opponent type flag$/;"	m	language:C++	class:rcsc::WorldModel
+M_our_defense_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_our_defense_line_x; \/\/!< our defense line x value(consider ball x)(their offside line)$/;"	m	language:C++	class:rcsc::WorldModel
+M_our_defense_player_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_our_defense_player_line_x; \/\/!< our defense player line x value (not consider ball)$/;"	m	language:C++	class:rcsc::WorldModel
+M_our_goalie_unum	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int M_our_goalie_unum; \/\/!< uniform number of teammate goalie$/;"	m	language:C++	class:rcsc::WorldModel
+M_our_offense_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_our_offense_line_x; \/\/!< our offense line x value(consider ball x)$/;"	m	language:C++	class:rcsc::WorldModel
+M_our_offense_player_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_our_offense_player_line_x; \/\/!< our offense player line x value (not consider ball)$/;"	m	language:C++	class:rcsc::WorldModel
+M_our_players	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AbstractPlayerCont M_our_players; \/\/!< all teammates pointers includes self$/;"	m	language:C++	class:rcsc::WorldModel
+M_our_side	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    SideID M_our_side; \/\/!< our side ID$/;"	m	language:C++	class:rcsc::WorldModel
+M_penalty_kick_state	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PenaltyKickState * M_penalty_kick_state; \/\/!< penalty kick mode status$/;"	m	language:C++	class:rcsc::WorldModel
+M_see_time	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    GameTime M_see_time; \/\/!< see updated time$/;"	m	language:C++	class:rcsc::WorldModel
+M_self	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    SelfObject M_self; \/\/!< self object$/;"	m	language:C++	class:rcsc::WorldModel
+M_sense_body_time	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    GameTime M_sense_body_time; \/\/!< sense_body updated time$/;"	m	language:C++	class:rcsc::WorldModel
+M_setplay_count	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    long M_setplay_count; \/\/!< setplay counter$/;"	m	language:C++	class:rcsc::WorldModel
+M_teammates	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PlayerCont M_teammates; \/\/!< side known teammmates$/;"	m	language:C++	class:rcsc::WorldModel
+M_teammates_from_ball	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PlayerPtrCont M_teammates_from_ball; \/\/!< teammates sorted by distance from self$/;"	m	language:C++	class:rcsc::WorldModel
+M_teammates_from_self	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PlayerPtrCont M_teammates_from_self; \/\/!< teammates sorted by distance from self$/;"	m	language:C++	class:rcsc::WorldModel
+M_teammate_card	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    Card M_teammate_card[11]; \/\/!< teammates' yellow\/red card status$/;"	m	language:C++	class:rcsc::WorldModel
+M_teammate_types	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int M_teammate_types[11]; \/\/!< teammate type reference$/;"	m	language:C++	class:rcsc::WorldModel
+M_teamname	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    std::string M_teamname; \/\/!< our teamname$/;"	m	language:C++	class:rcsc::WorldModel
+M_their_defense_line_count	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int M_their_defense_line_count; \/\/!< accuracy count of their defense line x value$/;"	m	language:C++	class:rcsc::WorldModel
+M_their_defense_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_their_defense_line_x; \/\/!< their defense line x value(consider ball x)$/;"	m	language:C++	class:rcsc::WorldModel
+M_their_defense_player_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_their_defense_player_line_x; \/\/!< their defense player line x value (not consider ball)$/;"	m	language:C++	class:rcsc::WorldModel
+M_their_goalie_unum	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int M_their_goalie_unum; \/\/!< uniform number of opponent goalie$/;"	m	language:C++	class:rcsc::WorldModel
+M_their_offense_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_their_offense_line_x; \/\/!< their offense line x value(consider ball x)$/;"	m	language:C++	class:rcsc::WorldModel
+M_their_offense_player_line_x	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    double M_their_offense_player_line_x; \/\/!< their offense player line x value (not consider ball)$/;"	m	language:C++	class:rcsc::WorldModel
+M_their_players	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    AbstractPlayerCont M_their_players; \/\/!< all opponents pointers includes unknown$/;"	m	language:C++	class:rcsc::WorldModel
+M_time	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    GameTime M_time; \/\/!< updated time$/;"	m	language:C++	class:rcsc::WorldModel
+M_training_time	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    GameTime M_training_time; \/\/!< training start\/end time for keepaway$/;"	m	language:C++	class:rcsc::WorldModel
+M_unknown_players	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PlayerCont M_unknown_players; \/\/!< unknown players$/;"	m	language:C++	class:rcsc::WorldModel
+M_valid	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    bool M_valid; \/\/!< if this world model is initialized, true.$/;"	m	language:C++	class:rcsc::WorldModel
+M_view_area_cont	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    ViewAreaCont M_view_area_cont;$/;"	m	language:C++	class:rcsc::WorldModel
+M_view_grid_map	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    ViewGridMap M_view_grid_map;$/;"	m	language:C++	class:rcsc::WorldModel
+offsideLineCount	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int offsideLineCount() const { return M_offside_line_count; }$/;"	f	language:C++	class:rcsc::WorldModel
+offsideLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & offsideLineX() const { return M_offside_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+operator =	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    WorldModel & operator=( const WorldModel & );$/;"	p	language:C++	class:rcsc::WorldModel
+opponents	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerCont & opponents() const { return M_opponents; }$/;"	f	language:C++	class:rcsc::WorldModel
+opponentsFromBall	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerPtrCont & opponentsFromBall() const { return M_opponents_from_ball; }$/;"	f	language:C++	class:rcsc::WorldModel
+opponentsFromSelf	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerPtrCont & opponentsFromSelf() const { return M_opponents_from_self; }$/;"	f	language:C++	class:rcsc::WorldModel
+opponentTeamName	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const std::string & opponentTeamName() const { return M_opponent_teamname; }$/;"	f	language:C++	class:rcsc::WorldModel
+ourCard	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    Card ourCard( const int unum ) const$/;"	f	language:C++	class:rcsc::WorldModel
+ourDefenseLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & ourDefenseLineX() const { return M_our_defense_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+ourDefensePlayerLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & ourDefensePlayerLineX() const { return M_our_defense_player_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+ourGoalieUnum	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int ourGoalieUnum() const { return M_our_goalie_unum; }$/;"	f	language:C++	class:rcsc::WorldModel
+ourOffenseLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & ourOffenseLineX() const { return M_our_offense_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+ourOffensePlayerLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & ourOffensePlayerLineX() const { return M_our_offense_player_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+ourPlayer	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const AbstractPlayerObject * ourPlayer( const int unum ) const$/;"	f	language:C++	class:rcsc::WorldModel
+ourPlayers	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const AbstractPlayerCont & ourPlayers() const { return M_our_players; }$/;"	f	language:C++	class:rcsc::WorldModel
+ourPlayerType	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerType * ourPlayerType( const int unum ) const;$/;"	p	language:C++	class:rcsc::WorldModel
+ourPlayerTypeId	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int ourPlayerTypeId( const int unum ) const$/;"	f	language:C++	class:rcsc::WorldModel
+ourSide	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    SideID ourSide() const { return M_our_side; }$/;"	f	language:C++	class:rcsc::WorldModel
+penaltyKickState	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    PenaltyKickState * penaltyKickState() const;$/;"	p	language:C++	class:rcsc::WorldModel
+rcsc	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^namespace rcsc {$/;"	n	language:C++
+RCSC_PLAYER_WORLD_MODEL_H	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	33;"	d	language:C++
+seeTime	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const GameTime & seeTime() const { return M_see_time; }$/;"	f	language:C++	class:rcsc::WorldModel
+self	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const SelfObject & self() const { return M_self; }$/;"	f	language:C++	class:rcsc::WorldModel
+senseBodyTime	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const GameTime & senseBodyTime() const { return M_sense_body_time; }$/;"	f	language:C++	class:rcsc::WorldModel
+setAudioMemory	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setAudioMemory( boost::shared_ptr< AudioMemory > memory );$/;"	p	language:C++	class:rcsc::WorldModel
+setCard	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setCard( const SideID side,$/;"	p	language:C++	class:rcsc::WorldModel
+setCommandEffect	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setCommandEffect( const ActionEffector & act );$/;"	p	language:C++	class:rcsc::WorldModel
+setOurPlayerType	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setOurPlayerType( const int unum,$/;"	p	language:C++	class:rcsc::WorldModel
+setPenaltyKickTaker	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setPenaltyKickTaker( const SideID side,$/;"	p	language:C++	class:rcsc::WorldModel
+setplayCount	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const long & setplayCount() const { return M_setplay_count; }$/;"	f	language:C++	class:rcsc::WorldModel
+setTheirPlayerType	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setTheirPlayerType( const int unum,$/;"	p	language:C++	class:rcsc::WorldModel
+setTrainingTime	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setTrainingTime( const GameTime & t )$/;"	f	language:C++	class:rcsc::WorldModel
+setValid	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setValid( bool is_valid );$/;"	p	language:C++	class:rcsc::WorldModel
+setViewMode	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void setViewMode( const ViewWidth & w,$/;"	f	language:C++	class:rcsc::WorldModel
+teammates	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerCont & teammates() const { return M_teammates; }$/;"	f	language:C++	class:rcsc::WorldModel
+teammatesFromBall	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerPtrCont & teammatesFromBall() const { return M_teammates_from_ball; }$/;"	f	language:C++	class:rcsc::WorldModel
+teammatesFromSelf	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerPtrCont & teammatesFromSelf() const { return M_teammates_from_self; }$/;"	f	language:C++	class:rcsc::WorldModel
+teamName	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const std::string & teamName() const { return M_teamname; }$/;"	f	language:C++	class:rcsc::WorldModel
+theirCard	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    Card theirCard( const int unum ) const$/;"	f	language:C++	class:rcsc::WorldModel
+theirDefenseLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & theirDefenseLineX() const { return M_their_defense_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+theirDefensePlayerLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & theirDefensePlayerLineX() const { return M_their_defense_player_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+theirGoalieUnum	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int theirGoalieUnum() const { return M_their_goalie_unum; }$/;"	f	language:C++	class:rcsc::WorldModel
+theirOffenseLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & theirOffenseLineX() const { return M_their_offense_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+theirOffensePlayerLineX	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const double & theirOffensePlayerLineX() const { return M_their_offense_player_line_x; }$/;"	f	language:C++	class:rcsc::WorldModel
+theirPlayer	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const AbstractPlayerObject * theirPlayer( const int unum ) const$/;"	f	language:C++	class:rcsc::WorldModel
+theirPlayers	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const AbstractPlayerCont & theirPlayers() const { return M_their_players; }$/;"	f	language:C++	class:rcsc::WorldModel
+theirPlayerType	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerType * theirPlayerType( const int unum ) const;$/;"	p	language:C++	class:rcsc::WorldModel
+theirPlayerTypeId	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    int theirPlayerTypeId( const int unum ) const$/;"	f	language:C++	class:rcsc::WorldModel
+theirSide	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    SideID theirSide() const$/;"	f	language:C++	class:rcsc::WorldModel
+time	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const GameTime & time() const { return M_time; }$/;"	f	language:C++	class:rcsc::WorldModel
+trainingTime	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const GameTime & trainingTime() const { return M_training_time; }$/;"	f	language:C++	class:rcsc::WorldModel
+unknownPlayers	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const PlayerCont & unknownPlayers() const { return M_unknown_players; }$/;"	f	language:C++	class:rcsc::WorldModel
+update	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void update( const ActionEffector & act,$/;"	p	language:C++	class:rcsc::WorldModel
+updateAfterFullstate	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateAfterFullstate( const FullstateSensor & fullstate,$/;"	p	language:C++	class:rcsc::WorldModel
+updateAfterSee	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateAfterSee( const VisualSensor & see,$/;"	p	language:C++	class:rcsc::WorldModel
+updateAfterSenseBody	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateAfterSenseBody( const BodySensor & sense_body,$/;"	p	language:C++	class:rcsc::WorldModel
+updateBallByHear	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateBallByHear( const ActionEffector & act );$/;"	p	language:C++	class:rcsc::WorldModel
+updateCollision	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateCollision();$/;"	p	language:C++	class:rcsc::WorldModel
+updateDirCount	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateDirCount( const ViewArea & varea );$/;"	p	language:C++	class:rcsc::WorldModel
+updateGameMode	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateGameMode( const GameMode & game_mode,$/;"	p	language:C++	class:rcsc::WorldModel
+updateGoalieByHear	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateGoalieByHear();$/;"	p	language:C++	class:rcsc::WorldModel
+updateInterceptTable	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateInterceptTable();$/;"	p	language:C++	class:rcsc::WorldModel
+updateJustBeforeDecision	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateJustBeforeDecision( const ActionEffector & act,$/;"	p	language:C++	class:rcsc::WorldModel
+updateLastKicker	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateLastKicker();$/;"	p	language:C++	class:rcsc::WorldModel
+updateOffsideLine	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateOffsideLine();$/;"	p	language:C++	class:rcsc::WorldModel
+updateOurDefenseLine	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateOurDefenseLine();$/;"	p	language:C++	class:rcsc::WorldModel
+updateOurOffenseLine	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateOurOffenseLine();$/;"	p	language:C++	class:rcsc::WorldModel
+updatePlayerByHear	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updatePlayerByHear();$/;"	p	language:C++	class:rcsc::WorldModel
+updatePlayerCard	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updatePlayerCard();$/;"	p	language:C++	class:rcsc::WorldModel
+updatePlayerLines	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updatePlayerLines();$/;"	p	language:C++	class:rcsc::WorldModel
+updatePlayerStateCache	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updatePlayerStateCache();$/;"	p	language:C++	class:rcsc::WorldModel
+updatePlayerType	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updatePlayerType();$/;"	p	language:C++	class:rcsc::WorldModel
+updateTheirDefenseLine	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateTheirDefenseLine();$/;"	p	language:C++	class:rcsc::WorldModel
+updateTheirOffenseLine	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    void updateTheirOffenseLine();$/;"	p	language:C++	class:rcsc::WorldModel
+viewAreaCont	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const ViewAreaCont & viewAreaCont() const { return M_view_area_cont; }$/;"	f	language:C++	class:rcsc::WorldModel
+viewGridMap	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    const ViewGridMap & viewGridMap() const { return M_view_grid_map; }$/;"	f	language:C++	class:rcsc::WorldModel
+WorldModel	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    WorldModel( const WorldModel & );$/;"	p	language:C++	class:rcsc::WorldModel
+WorldModel	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    WorldModel();$/;"	p	language:C++	class:rcsc::WorldModel
+WorldModel	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^class WorldModel {$/;"	c	language:C++	namespace:rcsc
+~WorldModel	/v/filer4b/v38q001/theshibk/cs344M/agent2d-3.1.1/rcsc/player/world_model.h	/^    ~WorldModel();$/;"	p	language:C++	class:rcsc::WorldModel
