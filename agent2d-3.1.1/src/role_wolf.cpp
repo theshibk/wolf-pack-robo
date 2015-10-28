@@ -35,6 +35,7 @@
 #include <rcsc/action/body_clear_ball.h>
 #include <rcsc/action/body_go_to_point_dodge.h>
 #include <rcsc/action/body_intercept.h>
+#include <rcsc/action/bhv_hunt.h>
 
 
 #include <rcsc/action/neck_scan_field.h>
@@ -50,41 +51,8 @@ const std::string RoleWolf::NAME( "Wolf" );
  */
 namespace {
 rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleWolf::create,
-                                                       RoleWolf::NAME );
+                                                       RoleWolf::name() );
 }
-
-/*-------------------------------------------------------------------*/
-/*!
-Useful code examples:
-
-// Get a pointer to the world model
-const WorldModel & wm = agent->world();
-
-// Agent's position in the world
-Vector2D myPos = wm.self().pos();
-
-// Position of the ball
-Vector2D myBall = wm.ball().pos();
-
-// Check if ball is kickable (should always be done before attempting to kick)
-bool kickable = agent->world().self().isKickable();
-
-// Current target position of agent in formation
-const Vector2D formation_position = Strategy::i().getPosition( wm.self().unum() );
-
-// Move to a point on the field
-Body_GoToPoint( target_point, dist_thr, dash_power).execute( agent );
-
-// A way to kick the ball at Vector2D target
-Body_KickOneStep( target, ServerParam::i().ballSpeedMax() ).execute( agent );
-
-// A list of teammates sorted in ascending order by their distance
-// from the ball
-agent->world().teammatesFromBall()
-
-// Set neck to scan the field (you should always specify some neck turn)
-agent->setNeckAction( new Neck_ScanField() );
-*/
 
 
 bool
@@ -204,20 +172,7 @@ RoleWolf::doMove( PlayerAgent * agent )
     }
     else
     {
-        agent->setNeckAction( new Neck_TurnToBall() );
-        if (agent->world().ball().distFromSelf() < 6)
-        {
-            Body_Intercept(true, agent->world().ball().pos()).execute(agent);
-        }
-        else
-        {
-            const WorldModel & wm = agent->world();
-            const Vector2D target_point = Strategy::i().getPosition(wm.self().unum());
-            const double dash_power = Strategy::get_normal_dash_power(agent->world());
-            Body_GoToPoint(target_point, 5, dash_power).execute(agent);
-            agent->setNeckAction( new Neck_ScanField() );
-        }
-
+        Bhv_Hunt().execute( agent );
     }
 }
 
